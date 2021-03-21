@@ -10,7 +10,7 @@ contract Color is ERC721Full {
   constructor() ERC721Full("Color", "COLOR") public {
   }
 
-  // E.G. color = "#FFFFFF"
+
   function mint(string memory _color) public {
     require(!_colorExists[_color]);
     uint _id = colors.push(_color);
